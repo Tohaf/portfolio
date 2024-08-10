@@ -1,76 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
+    
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 body{
-    background: aliceblue;
+    background: rgb(91, 199, 132);
     color: black;
     
-}
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url("image/toheeb.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    
-
-}
-#top{
-	
-	align-items: center;
-	justify-content: space-between;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-#top ul li{
-	list-style: none;
-	display: inline-block;
-	margin: 0 20px;
-	padding: 20px 20px;
-    
-}
-a{
-    text-decoration: none;
-    font-size: 30px;
-
-}
-#top h1{
-    margin: 10px 10%;
+    position: relative;
 }
 
-#summary{
-    margin: 20% 15%;
-    font-size: 30px;
-}
-.about{
-    display: flex;
-    justify-content: space-between;
-    position: center;
-    margin-top: 25%;
-}
-.about ul li {
-    display: inline-block;
-    margin: 0 20px;
-	padding: 20px 20px;
-    list-style: none;
-    font-size: 40px;
+@media only screen and (max-width: 900px){
+    [class*="col-"]{
+        width:100%;
+        text-align: center;
+    }
 
 }
-.about ul{
-    margin-right: 10%;
+
+@media only screen and(min-width: 900px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
 }
-.about ul li a::after{
-    content: '';
-    width: 100%;
-    height: 3px;
+
+div.top ul{
+    list-style-type: none;
     position: absolute;
-    background: #ff004f;
-    left: 0;
-    bottom: -6px;
+    margin: 0;
+    padding: 0;
+}
+div.top ul li{
+    float: left;
+    padding: 15px;
+
+}
+
+div.top ul li a{
+    text-decoration: none;
+    
+}
+
+
+
+#bodyMessage{
+    margin-top: 25%;
+    position: absolute;
+    margin-left: 20%;
+    max-width: 50%;
+
+}
+
+.img{
+    float: right;
+    padding: auto;
+    margin: auto;
+}
+
+
+.about ul{
+    list-style-type: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    margin: auto;
+    
+}
+.about ul li{
+    display: inline-block;
+    padding: 15px 10%;
+
+
+}
+.about ul a{
+    text-decoration: none;
+    text-align: center;
+
+    
 }
