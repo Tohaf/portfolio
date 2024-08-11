@@ -43,17 +43,20 @@ body{
 }
 
 
-
 div.top ul{
     list-style-type: none;
     position: absolute;
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+
 }
 div.top ul li{
     float: left;
-    padding: 15px;
-
+    padding: 25px;
+    
 }
 
 div.top ul li a{
@@ -66,7 +69,11 @@ div.top ul li a{
     float: right;
     
 }
-
+.img img{
+    border-radius: 50%;
+    margin-top: 20%;
+    
+}
 
 .bodyMessage{
     clear: right;
