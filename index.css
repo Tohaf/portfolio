@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(91, 199, 132);
+    background: wheat;
     color: black;
-    
     position: relative;
 }
 
@@ -14,6 +13,15 @@ body{
     [class*="col-"]{
         width:100%;
         text-align: center;
+
+    }
+    body{
+        position: relative;
+        background-color: white;
+        margin: 0;
+    }
+    .about ul li{
+        float: left;    
     }
 
 }
@@ -34,6 +42,8 @@ body{
 
 }
 
+
+
 div.top ul{
     list-style-type: none;
     position: absolute;
@@ -52,40 +62,55 @@ div.top ul li a{
 }
 
 
-
-#bodyMessage{
-    margin-top: 25%;
-    position: absolute;
-    margin-left: 20%;
-    max-width: 50%;
-
-}
-
 .img{
     float: right;
-    padding: auto;
-    margin: auto;
+    
 }
 
+
+.bodyMessage{
+    clear: right;
+    max-width: 100%;
+    text-align: center;
+}
 
 .about ul{
     list-style-type: none;
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: black;
-    margin: auto;
-    
+    background-color: rgb(184, 150, 200);
+    margin: 0;
+    padding: 0;
 }
 .about ul li{
     display: inline-block;
-    padding: 15px 10%;
+    padding: 10px 30px;
 
 
 }
 .about ul a{
     text-decoration: none;
-    text-align: center;
 
+    justify-content: space-between;
+}
+
+.exper{
+    border: 5px solid rgb(0, 113, 128);
+    background: rgb(190, 150, 200) scroll center;
+    border-radius: 40px;
+    max-width: 70%;
+    margin: auto;
     
 }
+
+.exper ul, h2, h3{
+    list-style-type: none;
+    text-align: center;
+}
+
+.exper ul li{
+    text-align: justify;
+    padding-right: 30px;
+}
+
