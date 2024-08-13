@@ -5,13 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-     
-        
-        <div class="arrange">
+<body class="bg-light">
+    
 
+
+        <div class="contain col-sm-8 mx-auto"   >
+
+            <nav class="navbar navbar-expand-sm bg-light navbar-success ">
+                <div class="container-fluid ">
+                  <a class="navbar-brand" href="#">  TOHAF.dev </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-start " id="demo">
+                    <ul class="offcanvas-body justify-content-end  list-unstyled  ">
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#">Home</a>
+                      </li>
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#experience">Experience</a>
+                      </li>
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#">Skills</a>
+                      </li>  
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#">Work</a>
+                      </li> 
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#">Contact</a>
+                      </li>   
+                      <li class="mx-2">
+                        <a class="text-decoration-none" href="#">Login</a>
+                      </li> 
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            
+              <div class="container row mt-5 clearfix">
+                
+                    <div class=" col-sm-4 float-start">
+                        
+                        <img class="rounded-circle col-4 "   src="image/toheeb.jpg" alt="">
+                        
+                    </div>
+                
+                    <div class=" col-sm-4 float-end" >
+                        <strong>Afolabi Toheeb</strong>
+                                
+                        <p>{Backend Developer}</p>
+                    
+                    </div>
+              </div>
+              <br>
+<!-- 
             <div class="top">
                 <ul >
                     <li><a href="#">Home</a></li>
@@ -20,22 +71,55 @@
                     <li><a href="About.html">About</a></li>
                 </ul>
             </div>
-
-            <div class="img col-3">
-                <img src="image/toheeb.jpg" alt="">
-            </div>
+-->
+           
                 
-            <div class="bodyMessage col-9">
-                <p>
-                    <strong> My name is Afolabi Toheeb, I am a Backend Developer and my expertise and skill varies fom Django and Nodejs.
-                    I have 3yrs+ experience in developing a fullstack web project, while i am heavy at the backend</strong>
+            <div class="bodyMessage  col-sm-12 text-success p-2 ">
+                <p  class="text-align-center">
+                    <strong> My name is Afolabi Toheeb <hr> I am a Backend Developer with expertise in Django and Nodejs <hr>
+                    I build Scalable backend API for both web and mobile App</strong> <hr>
                 </p>        
             </div>
-            <h3>EXPERIENCE</h3>
-            <div id="experience" class="exper">
-                <h2>Software Engineer</h2>
-                <h3>Emjay Web Solution</h3>
-                <ul>
+<br>
+
+            <div class="d-flex justify-content-between p-3 row" >
+                <div class="bg-success p-1 rounded-3 col-sm-4" >
+                    <h4>Experience</h4>
+                    <p>3yrs+ as a Developer</p>
+                </div>
+                
+                <div class=" p-2 rounded-3 col-sm-4">
+                    <h4>Projects</h4>
+                    <p>Series of fullStack Project achieved</p>
+                </div>
+
+                <div class="bg-warning p-1 rounded-3 col-sm-4">
+                    <h4>Education</h4>
+                    <p>Bachelor Degree in Computer Engineering(BSC)</p>
+                </div>
+            </div>
+
+            <br>
+
+
+
+            <h3 id="experience" class="col-sm-2 mx-auto p-2 text-warning">EXPERIENCE</h3>
+
+            <br>
+            <div id="experience" class="bg-white rounded-3 border border-info row px-1">
+                <div class="clearfix">
+                
+                    <div class="float-start col">
+                        <h5>Software Engineer</h5>
+                        <h6 class="text-success">Remote</h6>
+                    </div> 
+                    <div class="float-end col" >
+                        <h5>Emjay Web Solution</h5>
+                        <h6 class=" rounded-pill text-bg-success ">Jan 2022 - till date</h6>
+                    </div>
+                </div>
+                <br>
+                <ul class="list-unstyled">
                     <li>(1) I engage in troubleshooting complex client problems by understanding and identifying the problem, 
                         debugging software, and delivering a root cause analysis to Clients.</li>
                     <li>(2) I worked closely with colleagues in building, testing, and certifying exciting new product features.</li>
@@ -50,85 +134,72 @@
 
                 </ul>
             </div>
+            <br>
+            <br>
+
+            <div id="experience" class="bg-white rounded-3 border border-info px-1">
+                <div class="clearfix">
+                
+                    <div class="float-start">
+                        <h5>FullStack Developer</h5>
+                        <h6 class="text-success">Remote</h6>
+                    </div> 
+                    <div class="float-end" >
+                        <h5>Freelance.com</h5>
+                        <h6 class=" rounded-pill text-bg-success ">Dec 2020 - Dec 2021</h6>
+                    </div>
+                </div>
+                <br>
+                <ul class="list-unstyled">
+                    <li>(1) I supported in modifying software to fix errors, adapt it to new hardware, improve its performance, or 
+                        upgrade interfaces.</li>
+                    <li>(2) I engaged in directing system testing and validation procedures.
+                    </li>
+                    <li>(3) I analyzed information to recommend and plan the installation of new systems or modifications of an 
+                        existing system.</li> 
+                    <li>(4) I contribute to product roadmaps by participating in roadmap ideation and challenging product 
+                        manager specs.</li>
+                    <li>(5) I deliver consistent solutions and kept them up to date with the changing IT-systems landscape.</li>
+                    <li>(6) I train and supervise newbies to meet up with the standard requirements of becoming software 
+                        Engineer.</li>
+                    <li>(7) I designed and developed software systems using scientific analysis and mathematical models to predict 
+                        and measure outcomes and design consequences</li>
+
+                </ul>
+            </div>
+
+
+
+
+
         </div>
         
         
+
+
+
+
+
+
+
+
+
+
+
         
-        <h3>EXPERIENCE</h3>
-        <h2>Software Engineer</h2>
-        <ul>
-            <li>(1) I engage in troubleshooting complex client problems by understanding and identifying the problem, 
-                debugging software, and delivering a root cause analysis to Clients.</li>
-            <li>(2) I worked closely with colleagues in building, testing, and certifying exciting new product features.</li>
-            <li>(3) I lead the team in analyzing third-party risks to products and defining mitigation solutions.</li> 
-            <li>(4) I contribute to product roadmaps by participating in roadmap ideation and challenging product 
-                manager specs.</li>
-            <li>(5) I deliver consistent solutions and kept them up to date with the changing IT-systems landscape.</li>
-            <li>(6) I train and supervise newbies to meet up with the standard requirements of becoming software 
-                Engineer.</li>
-            <li>(7) I help clients on how to read, analyze and interpret technical data, designs, or specifications with 
-                particular reference to software development life cycle (SDLC)</li>
-
-        </ul>
+      
 
 
-        <h3>EXPERIENCE</h3>
-        <h2>Software Engineer</h2>
-        <ul>
-            <li>(1) I engage in troubleshooting complex client problems by understanding and identifying the problem, 
-                debugging software, and delivering a root cause analysis to Clients.</li>
-            <li>(2) I worked closely with colleagues in building, testing, and certifying exciting new product features.</li>
-            <li>(3) I lead the team in analyzing third-party risks to products and defining mitigation solutions.</li> 
-            <li>(4) I contribute to product roadmaps by participating in roadmap ideation and challenging product 
-                manager specs.</li>
-            <li>(5) I deliver consistent solutions and kept them up to date with the changing IT-systems landscape.</li>
-            <li>(6) I train and supervise newbies to meet up with the standard requirements of becoming software 
-                Engineer.</li>
-            <li>(7) I help clients on how to read, analyze and interpret technical data, designs, or specifications with 
-                particular reference to software development life cycle (SDLC)</li>
-
-        </ul>
-
-
-
-
-        <h3>EXPERIENCE</h3>
-        <h2>Software Engineer</h2>
-        <ul>
-            <li>(1) I engage in troubleshooting complex client problems by understanding and identifying the problem, 
-                debugging software, and delivering a root cause analysis to Clients.</li>
-            <li>(2) I worked closely with colleagues in building, testing, and certifying exciting new product features.</li>
-            <li>(3) I lead the team in analyzing third-party risks to products and defining mitigation solutions.</li> 
-            <li>(4) I contribute to product roadmaps by participating in roadmap ideation and challenging product 
-                manager specs.</li>
-            <li>(5) I deliver consistent solutions and kept them up to date with the changing IT-systems landscape.</li>
-            <li>(6) I train and supervise newbies to meet up with the standard requirements of becoming software 
-                Engineer.</li>
-            <li>(7) I help clients on how to read, analyze and interpret technical data, designs, or specifications with 
-                particular reference to software development life cycle (SDLC)</li>
-
-        </ul>
-
-
-
-
-        <h3 id="edu" >Education</h3>
-        <h2>Software Engineer</h2>
-        <ul>
-            <li>(1) I engage in troubleshooting complex client problems by understanding and identifying the problem, 
-                debugging software, and delivering a root cause analysis to Clients.</li>
-            <li>(2) I worked closely with colleagues in building, testing, and certifying exciting new product features.</li>
-            <li>(3) I lead the team in analyzing third-party risks to products and defining mitigation solutions.</li> 
-            <li>(4) I contribute to product roadmaps by participating in roadmap ideation and challenging product 
-                manager specs.</li>
-            <li>(5) I deliver consistent solutions and kept them up to date with the changing IT-systems landscape.</li>
-            <li>(6) I train and supervise newbies to meet up with the standard requirements of becoming software 
-                Engineer.</li>
-            <li>(7) I help clients on how to read, analyze and interpret technical data, designs, or specifications with 
-                particular reference to software development life cycle (SDLC)</li>
-
-        </ul>
         
+
+
+
+
+        
+
+
+        
+<!--     
         <div class="about" >
             <ul>
                 <li><a href="">Skill</a></li>
@@ -136,7 +207,7 @@
                 <li><a href="#edu">Education</a></li>
             </ul>
         </div>
-    
+ -->       
 
     
 </body>
